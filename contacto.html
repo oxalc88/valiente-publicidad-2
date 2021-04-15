@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Contáctanos</title>
+</head>
+<body>
+    <header>
+        <!-- éstos 2 van a la izquierda -->
+        <img src="logo.jpg" alt="Valiente Publicidad Logo">
+        <h1>Valiente Publicidad</h1>
+        <nav id="menu">
+            <!-- Esta es la barra de navegación -->
+            <!-- enlaces con etiqueta <a> agregados según correción -->
+            <ul>
+              <li><a id="link" href="index.html">Inicio</a></li>
+              <li><a id="link" href="nosotros.html">Nosotros</a></li>
+              <li><a id="link" href="servicios.html">Servicios</a></li>
+                <ul>
+                    <li id="link">Servicio 1</li>
+                    <li id="link">Servicio 2</li>
+                    <li id="link">Servicio 3</li>
+                </ul>
+              <li><a id="link" href="testimonios.html">Testimonios</a></li>
+              <li><a id="link" href="contacto.html">Contacto</a></li>
+            </ul>
+            <!-- botón va al final de la barra a la derecha -->
+            <button type="button">Cotiza Aquí</button>
+          </nav>
+    </header>
+    <main>
+    <section>
+        <h2>Dinos con qué te podemos ayudar</h2>
+        <p>Para nosotros es un placer poderte orientar con tu mensaje</p>
+            <form>
+                <fieldset>
+                    <legend>Nos pondremos en contacto contigo</legend>
+                    <legend>Cuéntanos qué necesitas:</legend>
+                    <select name="Servicios" id="">
+                        <option value="Servicio1">Servicio 1</option>
+                        <option value="Servicio2">Servicio 2</option>
+                        <option value="Servicio3">Servicio 3</option>
+                    </select>
+                    <label for="Nombre">Tu Nombre:</label> <input name="nombre y apellidos" type="text" placeholder="Ruben Darío" tabindex="1"> 
+                    <label for="email">Te escribimos a:</label> <input name="email" type="email" placeholder="nombre@ejemplo.com" tabindex="1">
+                    <label for="teléfono">Te llamaremos a:</label> <input name="teléfono" type="tel" placeholder="987654321" tabindex="1">
+                    <p>Acepto se contacte a través de la información brindada</p>
+                    <input type="checkbox" name="acepta" value="1" />
+                    <input type="reset" value="Limpiar">
+                    <input type="submit" value="Enviar">
+                </fieldset>            
+            </form>
+    </section>
+    </main>
+    <footer>
+        <!-- éstos 2 van a la izquierda igual que header -->
+        <img src="logo.jpg" alt="Valiente Publicidad Logo">
+        <h1>Valiente Publicidad</h1>
+        <nav id="menu">
+            <!-- Esta sección va al centro -->
+            <ul>
+              <li><a id="link" href="servicios.html">Servicios</a></li>
+              <li><a id="link" href="testimonios.html">Testimonios</a></li>
+              <li><a id="link" href="nosotros.html">Nosotros</a></li>
+            </ul>
+            <!-- botón va al final de la barra a la derecha -->
+            <button type="button">Cotiza Aquí</button>
+          </nav>
+          <p>(c) 2021 Valiente Publicidad</p>
+    </footer>
+</body>
+</html>

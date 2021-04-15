@@ -1,0 +1,59 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+/*para poner un fondo en gradiente*/
+header, footer{
+    background-image: linear-gradient(45deg, #9a6da6, #8d53a6, #9160a6);
+
+}
+section{
+    background: #A68FA0;
+}
+body {
+    color: #FFFFFFB8;
+    /* font-family: 'Libre Baskerville', sans-serif;
+    font-size: 70%; */
+    background-image: linear-gradient(to top right, #A2349F, #640A80); 
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: #FFFFFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+    line-height: 2em;
+    font-size: 18px;
+    
+}
+
+/*para quitar los puntos del nav*/
+#menu > ul{
+    list-style: none
+    
+}
+
+/*para poner letras blancas*/
+#link {
+    color: #FFFFFF;
+    text-decoration: none;
+    list-style: none;
+}
+
+/*para que se subraye cuando pase el mouse*/
+#link:hover{
+    text-decoration: underline;
+}
+
+/*color para el fondo del slider*/
+#slider{
+    background: #9B81A6
+}
+
+

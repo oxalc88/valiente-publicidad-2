@@ -35,8 +35,6 @@ article{
 
 body {
   color: #ffffffb8;
-  /* font-family: 'Libre Baskerville', sans-serif;
-    font-size: 70%; */
   background-image: linear-gradient(to top right, #a2349f, #640a80);
 }
 
@@ -83,18 +81,21 @@ p {
   background: #9b81a6;
 }
 
-.listaClientes{
-  width: 70vh;
-  height: auto;
+/* para ajustar la imagen de la página nosotros */
+.show {
+  display: inline-block;
+  width: 100vh;
 }
 
-.clientes{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  padding: 5px;
-  margin: 50px 10px;
-  overflow: hidden;
+/* aquí se busca poner el vídeo a la derecha y el grid con los clientes a la izquierda tal y como está en el sketch de la página testimonios*/
+#testimonio {
+  display: inline;
+  width: 100vh;
+}
+
+.listaClientes {
+  width: 70vh;
+  height: auto;
 }
 
 .confianza{
@@ -102,12 +103,12 @@ p {
   width: 30vh;
 }
 
-#testimonio{
-  display: inline;
-  width: 100vh;
-}
-
-.show{
+/* se busca haver un pequeño grid con los logos de los clientes */
+.clientes {
   display: inline-block;
-  width: 100vh;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  margin: 50px 10px;
+  overflow: hidden;
 }

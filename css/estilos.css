@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* estilos generales */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #ffffff;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+/*para poner un fondo en gradiente*/
+header,
+footer {
+    background-image: linear-gradient(45deg, #9a6da6, #8d53a6, #9160a6);
+}
+
+section {
+    background: #a68fa0;
+}
+
+body {
+    color: #ffffffb8;
+    background-image: linear-gradient(to top right, #a2349f, #640a80);
+}

@@ -66,6 +66,12 @@ nav li:hover>ul {
     justify-content: space-evenly;
 }
 
+#copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .link{
     color: #ffffff;
     text-decoration: none;
@@ -79,17 +85,17 @@ nav li:hover>ul {
 
 .logo{
     display: flex;
-    align-items: flex-start;
+    justify-content: left;
 }
 
 .cotiza{
     display: flex;
-    align-items: flex-end;
+    justify-content: right;
 }
 
 /* ajustando imagenes slider */
 .slider{
-    width: 100vw;
+    width: 90vw;
     display: flex;
     flex-direction: row;
     align-items: center;

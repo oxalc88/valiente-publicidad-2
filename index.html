@@ -11,15 +11,15 @@
 <body>
     <header>
         <!-- éstos 2 van a la izquierda -->
-        <div class="logo">
-            <a href="index.html"><img src="logo.jpg" alt="Valiente Publicidad Logo">
-                <h1>Valiente Publicidad</h1>
-                </div>
-            </a>
-        <nav>
+        <nav class="menu">
             <!-- Esta es la barra de navegación -->
             <!-- enlaces con etiqueta <a> agregados según correción -->
-            <ul class="menu">
+            <div class="logo">
+                <a href="index.html"><img src="logo.jpg" alt="Valiente Publicidad Logo">
+                    <h1>Valiente Publicidad</h1>
+                </a>
+            </div>
+            <ul>
               <li><a class="link" href="index.html">Inicio</a></li>
               <li><a class="link" href="nosotros.html">Nosotros</a></li>
               <li><a class="link" href="servicios.html">Servicios</a>
@@ -72,14 +72,14 @@
     </main>
     <footer>
         <!-- éstos 2 van a la izquierda igual que header -->
-        <div class="logo" >
-            <a href="index.html">
-                <img src="logo.jpg" alt="Valiente Publicidad Logo">
-                <h1>Valiente Publicidad</h1>
-            </a>
-        </div>
+        
         <nav>
-            <!-- Esta sección va al centro -->
+            <div class="logo" >
+                <a href="index.html">
+                    <img src="logo.jpg" alt="Valiente Publicidad Logo">
+                    <h1>Valiente Publicidad</h1>
+                </a>
+            </div>    <!-- Esta sección va al centro -->
             <ul class="menu">
               <li><a class="link" href="servicios.html">Servicios</a></li>
               <li><a class="link" href="testimonios.html">Testimonios</a></li>
@@ -87,8 +87,8 @@
             </ul>
             <!-- botón va al final de la barra a la derecha -->
             <button class="cotiza" type="button">Cotiza Aquí</button>
-          </nav>
-          <p>(c) 2021 Valiente Publicidad</p>
+        </nav>
+          <p id="copyright">(c) 2021 Valiente Publicidad</p>
     </footer>
 </body>
 </html>

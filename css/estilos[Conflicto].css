@@ -63,7 +63,7 @@ nav li:hover>ul {
 }
 
 .menu{
-    width: 80vw;
+    width: 70vw;
     height: 12vh;
     display: flex;
     flex-direction: row;
@@ -103,33 +103,16 @@ nav li:hover>ul {
 /* ajustando imagenes slider */
 .slider{
     width: 90vw;
-    height: 20vh;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
 .show{
-    /* width: 50%;
-    height: 50%; */
+    width: 50%;
+    height: 50%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: stretch;
-}
-
-.services{
-    width: 90vw;
-    height: 70vh;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: grid;
-    grid-template-columns: 40% 20% 40%;
-    grid-template-rows: 20vh 10vh 30vh 10vh;
-    grid-template-areas: 
-    "serv serv serv"
-    "serv1 blank serv2"
-    "text blank text"
-    "boton blank boton";
-
 }

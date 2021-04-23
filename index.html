@@ -11,7 +11,7 @@
 <body>
     <header>
         <!-- éstos 2 van a la izquierda -->
-        <nav class="menu">
+        <nav class="barraValiente">
             <!-- Esta es la barra de navegación -->
             <!-- enlaces con etiqueta <a> agregados según correción -->
             <div class="logo">
@@ -19,7 +19,7 @@
                     <h1>Valiente Publicidad</h1>
                 </a>
             </div>
-            <ul>
+            <ul class="menu">
               <li><a class="link" href="index.html">Inicio</a></li>
               <li><a class="link" href="nosotros.html">Nosotros</a></li>
               <li><a class="link" href="servicios.html">Servicios</a>
@@ -40,31 +40,31 @@
         <section class="slider">
             <!-- Aqui un slider de 4 ofertas con un botón que invita a cotizar (podría cambiarse luego por hacer clic directo en la imagen) -->
             <div class="show">
-                <img src="img\services\mini-trooper.jpg" alt="oferta 1">
+                <!-- <img src="img\services\mini-trooper.jpg" alt="oferta 1"> -->
                 <button type="button">Cotiza Aquí</button>
             </div>
             <div class="show">
-                <img src="img\services\paleta.jpg" alt="oferta 2">
+                <!-- <img src="img\services\paleta.jpg" alt="oferta 2"> -->
                 <button type="button">Cotiza Aquí</button>
             </div>
             <div class="show">
-                <img src="img\services\lapiz.jpg" alt="oferta 3">
+                <!-- <img src="img\services\lapiz.jpg" alt="oferta 3"> -->
                 <button type="button">Cotiza Aquí</button>
             </div>
             <div class="show" >
-                <img src="img\services\barranco-yo.jpeg" alt="oferta 4">
+                <!-- <img src="img\services\barranco-yo.jpeg" alt="oferta 4"> -->
                 <button type="button">Cotiza Aquí</button>
             </div>
         </section>
-        <section>
-        <h2>Servicios Valiente</h2>
+        <section class="services"> 
+        <h2 class="serv">Servicios Valiente</h2>
         <article>
-            <h3>Servicio 1</h3>
+            <h3 class="serv1">Servicio 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam nemo, nostrum rem ullam ut deleniti iusto, quas necessitatibus possimus quia distinctio ab quis placeat molestias explicabo quibusdam obcaecati veniam?</p>
-            <button type="button">Conoce Más</button>
+            <button class="boton" type="button">Conoce Más</button>
         </article>
         <article>
-            <h3>Servicio 2</h3>
+            <h3 class="boton">Servicio 2</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam nemo, nostrum rem ullam ut deleniti iusto, quas necessitatibus possimus quia distinctio ab quis placeat molestias explicabo quibusdam obcaecati veniam?</p>
             <button type="button">Conoce Más</button>
         </article>
@@ -73,7 +73,7 @@
     <footer>
         <!-- éstos 2 van a la izquierda igual que header -->
         
-        <nav>
+        <nav class="barraValiente">
             <div class="logo" >
                 <a href="index.html">
                     <img src="logo.jpg" alt="Valiente Publicidad Logo">

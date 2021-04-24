@@ -124,12 +124,51 @@ nav li:hover>ul {
     margin-top: 50px;
     margin-bottom: 50px;
     display: grid;
-    grid-template-columns: 40% 20% 40%;
+    grid-template-columns: 40% 40%;
     grid-template-rows: 20vh 10vh 30vh 10vh;
     grid-template-areas: 
-    "serv serv serv"
-    "serv1 blank serv2"
-    "text blank text"
-    "boton blank boton";
+    "serv serv"
+    "serv1 serv2"
+    "text1 text2"
+    "boton boton";
+}
 
+.servicios{
+    margin: 20px;
+    padding: 10px;
+}
+
+.serv{
+    grid-area: serv;
+    display: flex;
+    align-self: center;
+} 
+
+.serv1{
+    grid-area: serv1;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
+}
+
+.serv2{
+    grid-area: serv2;
+    margin-bottom: 20px;
+    display: flex;
+    align-self: center;
+}
+
+.text2{
+    grid-area: text1;
+    margin-bottom: 30px;
+}
+
+.text2 {
+    grid-area: text2;
+    margin-bottom: 30px;
+}
+
+.boton{
+    grid-area: boton;
+    margin-top: 30px;
 }

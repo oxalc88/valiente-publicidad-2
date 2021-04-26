@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* estilos generales */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    color: #49157D;
+    font-family: "Roboto Condensed", sans-serif;
+    line-height: 1.5em;
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-family: "Roboto", sans-serif;
+    line-height: 2em;
+    font-size: 18px;
+}
+
+/*para poner un fondo en gradiente*/
+/* header,
+footer {
+    background-image: linear-gradient(45deg, #9a6da6, #8d53a6, #9160a6);
+} */
+
+body {
+    /* color: #ffffffb8; */
+    /*#49157D; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    background: #756783;
+}
+
+/* para ocultar submenu */
+nav li ul {
+    display: none;
+}
+
+nav li:hover>ul {
+    display: block;
+    position: absolute;
+}
+
+.link{
+    display: block;
+    padding: 30px;
+}
+/*para que se subraye cuando pase el mouse*/
+.link:hover {
+    background: #0AEABF
+}
+.link:active{
+    background-color: #49157D;
+    color: #0AEABF;
+}
+
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header"
+    "carrusel carrusel carrusel carrusel carrusel"
+    "servicios servicios servicios servicios servicios"
+    "footer footer footer footer footer";
+}
+
+.contenedor-nav{
+    grid-area: header;
+}
+
+.barraValiente {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "logo barra barra barra boton";
+    grid-gap: 5rem;
+}
+
+.menu {
+    grid-area: barra;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    grid-area: logo;
+    width: 246px;
+    height: 87px;
+    margin: 20px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 95%;
+}
+
+.cotiza {
+    grid-area: boton;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton-cotiza {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: #0AEABF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.boton-cotiza:hover{
+    background-color: #49157D;
+    color: #0AEABF;
+}

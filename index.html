@@ -9,14 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="contenedor-nav">
         <!-- éstos 2 van a la izquierda -->
         <nav class="barraValiente">
             <!-- Esta es la barra de navegación -->
             <!-- enlaces con etiqueta <a> agregados según correción -->
             <div class="logo">
-                <a href="index.html"><img src="logo.jpg" alt="Valiente Publicidad Logo">
-                    <h1>Valiente Publicidad</h1>
+                <a href="index.html"><img src="img\logo\logo-valiente-verde-blanco.png" alt="Valiente Publicidad Logo">
                 </a>
             </div>
             <ul class="menu">
@@ -33,7 +32,9 @@
               <li><a class="link" href="contacto.html">Contacto</a></li>
             </ul>
             <!-- botón va al final de la barra a la derecha -->
-            <button class="cotiza" type="button">Cotiza Aquí</button>
+            <div class="cotiza">
+            <a class="boton-cotiza" >Cotiza Aquí</a>
+            </div>
           </nav>
     </header>
     <main>
@@ -72,14 +73,12 @@
             </section>
         </div>
     </main>
-    <footer>
+    <footer class="contenedor-nav">
         <!-- éstos 2 van a la izquierda igual que header -->
         
         <nav class="barraValiente">
             <div class="logo" >
-                <a href="index.html">
-                    <img src="logo.jpg" alt="Valiente Publicidad Logo">
-                    <h1>Valiente Publicidad</h1>
+                <a href="index.html"><img src="img\logo\logo-valiente-verde-blanco.png" alt="Valiente Publicidad Logo">
                 </a>
             </div>    <!-- Esta sección va al centro -->
             <ul class="menu">
@@ -88,9 +87,10 @@
               <li><a class="link" href="nosotros.html">Nosotros</a></li>
             </ul>
             <!-- botón va al final de la barra a la derecha -->
-            <a class="cotiza" href="contacto.html">Cotiza Aquí</a>
+            <div class="cotiza"><a class="boton-cotiza" href="contacto.html">Cotiza Aquí</a>
+            </div>
         </nav>
-          <p id="copyright">(c) 2021 Valiente Publicidad</p>
+          <p id="copyright">Valiente Publicidad © 2021</p>
     </footer>
 </body>
 </html>

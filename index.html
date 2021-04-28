@@ -4,93 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valiente Publicidad</title>
-    <link rel="stylesheet" href="css/estilos.css" />
+        <title>Valiente Publicidad</title>
+    <link rel="stylesheet" href="css/estiloGrid.css" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="contenedor-nav">
+    
+    <div class="grilla">
+        <header class="contenedor-nav">
         <!-- éstos 2 van a la izquierda -->
-        <nav class="barraValiente">
-            <!-- Esta es la barra de navegación -->
-            <!-- enlaces con etiqueta <a> agregados según correción -->
-            <div class="logo">
-                <a href="index.html"><img src="img\logo\logo-valiente-verde-blanco.png" alt="Valiente Publicidad Logo">
-                </a>
-            </div>
-            <ul class="menu">
-              <li><a class="link" href="index.html">Inicio</a></li>
-              <li><a class="link" href="nosotros.html">Nosotros</a></li>
-              <li><a class="link" href="servicios.html">Servicios</a>
-                <ul>
-                    <li><a class="link" href="https://www.youtube.com/watch?v=ltZZ3M2zQRw" target="_blank">Servicio 1</a></li>
-                    <li><a class="link" href="https://www.youtube.com/watch?v=PyXH9AcNirk" target="_blank">Servicio 2</a></li>
-                    <li><a class="link" href="https://www.youtube.com/watch?v=L8ZxnNBKVfM" target="_blank">Servicio 3</a></li>
+            <nav class="barraValiente">
+                <!-- Esta es la barra de navegación -->
+                <!-- enlaces con etiqueta <a> agregados según correción -->
+                <div class="logo">
+                    <a href="index.html"><img src="img\logo\logo-valiente-original.png" alt="Valiente Publicidad Logo">
+                    </a>
+                </div>
+                <ul class="menu">
+                <li><a class="link" href="index.html">Inicio</a></li>
+                <li><a class="link" href="nosotros.html">Nosotros</a></li>
+                <li><a class="link" href="servicios.html">Servicios</a>
+                    <ul>
+                        <li><a class="link" href="https://www.youtube.com/watch?v=ltZZ3M2zQRw" target="_blank">Servicio 1</a></li>
+                        <li><a class="link" href="https://www.youtube.com/watch?v=PyXH9AcNirk" target="_blank">Servicio 2</a></li>
+                        <li><a class="link" href="https://www.youtube.com/watch?v=L8ZxnNBKVfM" target="_blank">Servicio 3</a></li>
+                    </ul>
+                </li>
+                <li><a class="link" href="testimonios.html">Testimonios</a></li>
+                <li><a class="link" href="contacto.html">Contacto</a></li>
                 </ul>
-              </li>
-              <li><a class="link" href="testimonios.html">Testimonios</a></li>
-              <li><a class="link" href="contacto.html">Contacto</a></li>
-            </ul>
-            <!-- botón va al final de la barra a la derecha -->
-            <div class="cotiza">
-            <a class="boton-cotiza" >Cotiza Aquí</a>
+                <!-- botón va al final de la barra a la derecha -->
+                <div class="cotiza">
+                <a class="boton cotiz">Cotiza Aquí</a>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="corpo">
+                <section class="slider">
+                    <!-- Aqui un slider de 4 ofertas con un botón que invita a cotizar (podría cambiarse luego por hacer clic directo en la imagen) -->
+                    <div class="show">
+                        <img src="http://placeimg.com/1000/200/arch" alt="oferta 1"href="contacto.html">
+                    </div>
+                </section>
+                <section class="contenedor-servicios"> 
+                    <h2 class="serv">Servicios Valiente</h2>
+                    <article class="servicios uno">
+                            <h3 class="offer">Servicio 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, inventore consectetur? Inventore, quam eius eaque provident vero architecto maxime modi.</p>
+                            <a class="boton conoce" href="servicios.html">Conoce Más</a>
+                    </article>
+                    <article class="servicios due">
+                            <h3 class="offer">Servicio 2</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam sequi explicabo, quae eos accusamus doloremque maxime amet repellendus mollitia excepturi.</p>
+                            <a class="boton conoce" href="servicios.html">Conoce Más</a>
+                    </article>
+                </section>
             </div>
-          </nav>
-    </header>
-    <main>
-        <section class="slider">
-            <!-- Aqui un slider de 4 ofertas con un botón que invita a cotizar (podría cambiarse luego por hacer clic directo en la imagen) -->
-            <div class="show">
-                <!-- <img src="img\services\mini-trooper.jpg" alt="oferta 1"> -->
-                <button type="button">Cotiza Aquí</button>
-            </div>
-            <div class="show">
-                <!-- <img src="img\services\paleta.jpg" alt="oferta 2"> -->
-                <button type="button">Cotiza Aquí</button>
-            </div>
-            <div class="show">
-                <!-- <img src="img\services\lapiz.jpg" alt="oferta 3"> -->
-                <button type="button">Cotiza Aquí</button>
-            </div>
-            <div class="show" >
-                <!-- <img src="img\services\barranco-yo.jpeg" alt="oferta 4"> -->
-                <button type="button">Cotiza Aquí</button>
-            </div>
-        </section>
-        <div class="contenedor-servicios">
-            <section class="services"> 
-                <h2 class="serv">Servicios Valiente</h2>
-                <article class="servicios">
-                    <h3 class="serv1">Servicio 1</h3>
-                    <p class="text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam nemo, nostrum rem ullam ut deleniti iusto, quas necessitatibus possimus quia distinctio ab quis placeat molestias explicabo quibusdam obcaecati veniam?</p>
-                    <button class="boton" type="button">Conoce Más</button>
-                </article>
-                <article class="servicios">
-                    <h3 class="serv2">Servicio 2</h3>
-                    <p class="text2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt totam nemo, nostrum rem ullam ut deleniti iusto, quas necessitatibus possimus quia distinctio ab quis placeat molestias explicabo quibusdam obcaecati veniam?</p>
-                    <button class="boton" type="button">Conoce Más</button>
-                </article>
-            </section>
-        </div>
-    </main>
-    <footer class="contenedor-nav">
-        <!-- éstos 2 van a la izquierda igual que header -->
-        
-        <nav class="barraValiente">
-            <div class="logo" >
-                <a href="index.html"><img src="img\logo\logo-valiente-verde-blanco.png" alt="Valiente Publicidad Logo">
-                </a>
-            </div>    <!-- Esta sección va al centro -->
-            <ul class="menu">
-              <li><a class="link" href="servicios.html">Servicios</a></li>
-              <li><a class="link" href="testimonios.html">Testimonios</a></li>
-              <li><a class="link" href="nosotros.html">Nosotros</a></li>
-            </ul>
-            <!-- botón va al final de la barra a la derecha -->
-            <div class="cotiza"><a class="boton-cotiza" href="contacto.html">Cotiza Aquí</a>
-            </div>
-        </nav>
-          <p id="copyright">Valiente Publicidad © 2021</p>
-    </footer>
+        </main>
+        <footer class="nav-foot">
+            <nav class="barraValiente">
+                <div class="logo" >
+                    <a href="index.html"><img src="img\logo\logo-valiente-original.png" alt="Valiente Publicidad Logo">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a class="link" href="servicios.html">Servicios</a></li>
+                    <li><a class="link" href="testimonios.html">Testimonios</a></li>
+                    <li><a class="link" href="nosotros.html">Nosotros</a></li>
+                </ul>
+                <div class="cotiza">
+                    <a class="boton cotiz" href="contacto.html">Cotiza Aquí</a>
+                </div>
+            </nav>
+                <p id="copyright">Valiente Publicidad © 2021</p>
+        </footer>
+    </div>
 </body>
 </html>

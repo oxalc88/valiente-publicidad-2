@@ -66,9 +66,8 @@ nav li:hover>ul {
     grid-template-rows: auto;
     grid-template-areas: 
     "header header header header header"
-    "carrusel carrusel carrusel carrusel carrusel"
-    "servicios servicios servicios servicios servicios"
-    "footer footer footer footer footer";
+    "cuerpo cuerpo cuerpo cuerpo cuerpo"
+    "foot foot foot foot foot";
 }
 
 .contenedor-nav{
@@ -124,6 +123,13 @@ nav li:hover>ul {
     cursor: pointer;
 }
 
+.conoce{
+    width: 115px;
+    height: 48px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
 .cotiz{
     width: 130px;
     height: 40px;
@@ -136,21 +142,88 @@ nav li:hover>ul {
     color: #0AEABF;
 }
 
-.loro{
-    grid-area: carrusel;
+.corpo {
+    grid-area: cuerpo;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+        "carrusel carrusel carrusel carrusel carrusel"
+        "servicios servicios servicios servicios servicios";
 }
 
-.servi {
+.slider {
+    grid-area: carrusel;
+    border: 10px;
+    border-color: black;
+    width: 99vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.show{
+    width: 100%;
+    height: 100%;
+}
+
+.show img{
+    width: 100%;
+}
+
+.contenedor-servicios{
     grid-area: servicios;
+    display: grid;
+    width: 99vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "serv serv"
+    "serv1 serv2";
+    /*"text1 text2"
+    "boton boton"; */
+    /* grid-gap: 5rem; */
+}
+
+.servicios {
+    background-color: #640A80;
+    margin: 20px;
+    padding: 10px;
+    /*display: flex;
+    align-items: center;*/
+}
+
+.uno{
+    grid-area: serv1;
+}
+
+.due {
+    grid-area: serv2;
+}
+
+.serv {
+    grid-area: serv;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 10px;
+}
+
+.offer {
+    margin: 20px 0px;
+    /* display: flex;
+    align-self: center; */
 }
 
 .nav-foot{
-    grid-area: footer;
-    background-color: #49157D;
+    grid-area: foot;
+    border-top: 1px solid #49157D
 }
 
 
 #copyright {
+    grid-area: copy;
     display: flex;
     align-items: center;
     justify-content: center;

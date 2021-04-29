@@ -229,6 +229,35 @@ nav li:hover>ul {
     justify-content: center;
 }
 
+.cartas-servicios{
+    grid-area: cuerpo;
+    display: grid;
+    width: 99vw;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "descrip img"
+        "descrip img"
+        "descrip img"
+        "descrip img";
+}
+
+.serviDescrip{
+    grid-area: descrip;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-service{
+    grid-area: img;
+}
+
+.one, .dos, .tres, .cuatro{
+    grid-area: descrip;
+}
+
 /* media query para tablet */
 @media screen and (max-width: 768px) {
     .contenedor-nav {

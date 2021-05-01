@@ -46,6 +46,9 @@ nav li:hover>ul {
     display: block;
     position: absolute;
 }
+.submenu:hover {
+    background: #ffff;
+}
 
 .link{
     display: block;
@@ -59,6 +62,7 @@ nav li:hover>ul {
     background-color: #49157D;
     color: #0AEABF;
 }
+
 
 .grilla{
     display: grid;
@@ -121,6 +125,7 @@ nav li:hover>ul {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all .2s ease-in-out;
 }
 
 .conoce{
@@ -140,6 +145,7 @@ nav li:hover>ul {
 .boton:hover{
     background-color: #49157D;
     color: #0AEABF;
+    transform: scale(1.15);
 }
 
 .corpo {
@@ -166,6 +172,12 @@ nav li:hover>ul {
 .show{
     width: 100%;
     height: 100%;
+    transition: all .2s ease-in-out;
+}
+
+.show:hover{
+    transform: scale(1.05);
+    opacity: 80%;
 }
 
 .show img{
@@ -218,13 +230,11 @@ nav li:hover>ul {
 
 .offer {
     margin: 20px 0px;
-    /* display: flex;
-    align-self: center; */
 }
 
 .nav-foot{
     grid-area: foot;
-    border-top: 1px solid #49157D
+    border-top: 0px solid #49157D
 }
 
 
@@ -233,14 +243,12 @@ nav li:hover>ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
 }
 
+/* estilos de página servicios */
 .cartas-servicios{
     grid-area: cuerpo;
-    /* display: flex;
-    flex: 1 5rem;
-    align-items: space-evenly;
-    flex-flow: column wrap; */
     display: grid;
     width: 99vw;
     grid-template-columns: auto;
@@ -304,11 +312,6 @@ nav li:hover>ul {
     margin: 20px 0px;
 }
 
-
-/* .img-service img{
-    width: 100%;
-} */
-
 .one{
     grid-area: texto1;
 }
@@ -325,28 +328,101 @@ nav li:hover>ul {
     grid-area: texto4;
 }
 
-/* media query para tablet */
-@media screen and (max-width: 768px) {
-    .contenedor-nav {
-        text-align: center;
-    }
-
-    .menu{
-        display: none;
-    }
-
-    .nav-foot > .logo{
-        display: none;
-    }
-
-    .grilla .corpo {
-        grid-column: 1 / -1;
-    }
-
-    .grilla .nav-foot {
-        grid-column: 1/-1;
-    }
+/* estilos pagina nosotros */
+.nosotros{
+    grid-area: cuerpo;
+    width: 99vw;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-beetween;
+    background: #ffff;
 }
+
+.us{
+    width: 631px;
+    height: 563px;
+    margin: 90px;
+    align-self: flex-start;
+}
+
+.us img{
+    width: 100%;
+}
+
+.historia{
+    align-self: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.historia p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.them{
+    border-bottom: #49157D 3px solid;
+}
+
+/* estilos pagina testimonios */
+.testimonio{
+    grid-area: cuerpo;
+    width: 99vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background: #ffff;
+    margin-bottom: 70px;
+}
+
+.listaClientes .confianza {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 49vw;
+    gap: 1rem;
+}
+
+.testimonio h2{
+    margin: 25px;
+    padding: 15px;
+}
+
+.los-testi{
+    margin: 10px;
+}
+
+.clientes{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.clientes img{
+    margin: 35px;
+    box-shadow: 3px 3px 8px 0px rgb(10, 10, 10);
+}
+
+.linea{
+    background: #49157D;
+    height: 60vh;
+    padding: 1px;
+    display: block;
+    margin: auto;
+}
+
+.confianza iframe {
+    margin: 10px;
+    padding: 20px;
+}
+
+.confianza h3, p{
+    margin-left: 30px
+}
+
+/* estilos para pagina de formulario */
+
 
 @media screen and (max-width: 320px) {
 

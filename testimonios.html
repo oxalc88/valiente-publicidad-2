@@ -1,81 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-   <meta charset="UTF-8" />
-   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <link rel="stylesheet" href="css/styles.css" />
-   <link rel="preconnect" href="https://fonts.gstatic.com" />
-   <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/estiloGrid.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&display=swap" rel="stylesheet"/>
   <title>Testimonios</title>
 </head>
 <body>
-    <header>
-      <!-- éstos 2 van a la izquierda -->
-      <img src="logo.jpg" alt="Valiente Publicidad Logo" />
-      <h1>Valiente Publicidad</h1>
-      <nav id="menu">
-        <!-- Esta es la barra de navegación -->
-        <!-- enlaces con etiqueta <a> agregados según correción -->
-        <ul>
-          <li><a id="link" href="index.html">Inicio</a></li>
-          <li><a id="link" href="nosotros.html">Nosotros</a></li>
-          <li><a id="link" href="servicios.html">Servicios</a>
-            <ul>
-              <li><a id="link" href="https://www.youtube.com/watch?v=ltZZ3M2zQRw" target="_blank">Servicio 1</a></li>
-              <li><a id="link" href="https://www.youtube.com/watch?v=PyXH9AcNirk" target="_blank">Servicio 2</a></li>
-              <li><a id="link" href="https://www.youtube.com/watch?v=L8ZxnNBKVfM" target="_blank">Servicio 3</a></li>
-            </ul>
-          </li>
-          <li><a id="link" href="testimonios.html">Testimonios</a></li>
-          <li><a id="link" href="contacto.html">Contacto</a></li>
-        </ul>
-        <!-- botón va al final de la barra a la derecha -->
-        <button type="button">Cotiza Aquí</button>
-      </nav>
+  <div class="grilla">
+    <header class="contenedor-nav">
+            <nav class="barraValiente">
+                <div class="logo">
+                    <a href="index.html"><img src="img\logo\logo-valiente-original.png" alt="Valiente Publicidad Logo">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a class="link" href="index.html">Inicio</a></li>
+                    <li><a class="link" href="nosotros.html">Nosotros</a></li>
+                    <li><a class="link" href="servicios.html">Servicios</a>
+                        <ul class="submenu">
+                            <li><a class="link" href="https://www.youtube.com/watch?v=ltZZ3M2zQRw" target="_blank">Servicio 1</a></li>
+                            <li><a class="link" href="https://www.youtube.com/watch?v=PyXH9AcNirk" target="_blank">Servicio 2</a></li>
+                            <li><a class="link" href="https://www.youtube.com/watch?v=L8ZxnNBKVfM" target="_blank">Servicio 3</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="link" href="testimonios.html">Testimonios</a></li>
+                    <li><a class="link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <div class="cotiza">
+                    <a class="boton cotiz">Cotiza Aquí</a>
+                </div>
+            </nav>
     </header>
     <main>
-      <section id="testimonio">
-        <h2>Testimonios</h2>
+      <section class="testimonio">
         <article class="listaClientes">
+          <h2>Testimonios</h2>
+          <div class="los-testi">
           <p>Estás en buenas manos</p>
           <p>Cuando me llamó allá fui. Cuando me di cuenta estaba allí</p>
-            <div class="clientes"><img src="img\clientes\best.jpg" alt="cliente1"></div>
-            <div class="clientes"><img src="img\clientes\beautiful.jpg" alt="cliente2"></div>
-            <div class="clientes"><img src="img\clientes\bistro.jpg" alt="cliente3"></div>
-            <div class="clientes"><img src="img\clientes\floral.jpg" alt="cliente4"></div>
-            <div class="clientes"><img src="img\clientes\menu.jpg" alt="cliente5"></div>
-            <div class="clientes"><img src="img\clientes\nature.jpg" alt="cliente6"></div>
+          </div>
+          <div class="clientes">
+            <div><img src="http://placeimg.com/173/76/people/grayscale" alt="cliente1"></div>
+            <div><img src="http://placeimg.com/173/76/tech/sepia" alt="cliente2"></div>
+            <div><img src="http://placeimg.com/173/76/tech" alt="cliente3"></div>
+            <div><img src="http://placeimg.com/173/76/arch/grayscale" alt="cliente4"></div>
+            <div><img src="http://placeimg.com/173/76/arch" alt="cliente5"></div>
+            <div><img src="http://placeimg.com/173/76/tech/grayscale" alt="cliente6"></div>
+          </div>
         </article>
+        <div class="linea"></div>
         <article class="confianza">
-            <h3>Ellos entendieron nuestra filosofía</h3>
             <iframe
-              width="560"
-              height="315"
+              width="554"
+              height="378"
               src="https://www.youtube.com/embed/XbH-stUxAHw"
               title="YouTube video player"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
+            <h3>Ellos entendieron nuestra filosofía</h3>
+            <p>Dime que ves, que me podrás querer
+              Mañana cunado encuentres una razon sin temor
+              Oh , dime que sientes que te sé querer con todo
+              Cuando vuelves al amanecer para amarte hasta morir...</p>
         </article>
       </section>
     </main>
-    <footer>
-      <!-- éstos 2 van a la izquierda igual que header -->
-      <img src="logo.jpg" alt="Valiente Publicidad Logo" />
-      <h1>Valiente Publicidad</h1>
-      <nav id="menu">
-        <!-- Esta sección va al centro -->
-        <ul>
-          <li><a id="link" href="servicios.html">Servicios</a></li>
-          <li><a id="link" href="testimonios.html">Testimonios</a></li>
-          <li><a id="link" href="nosotros.html">Nosotros</a></li>
-        </ul>
-        <!-- botón va al final de la barra a la derecha -->
-        <button type="button">Cotiza Aquí</button>
-      </nav>
-      <p>(c) 2021 Valiente Publicidad</p>
+    <footer class="nav-foot">
+            <nav class="barraValiente">
+                <div class="logo" >
+                    <a href="index.html"><img src="img\logo\logo-valiente-original.png" alt="Valiente Publicidad Logo">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a class="link" href="servicios.html">Servicios</a></li>
+                    <li><a class="link" href="testimonios.html">Testimonios</a></li>
+                    <li><a class="link" href="nosotros.html">Nosotros</a></li>
+                </ul>
+                <div class="cotiza">
+                    <a class="boton cotiz" href="contacto.html">Cotiza Aquí</a>
+                </div>
+            </nav>
+                <h5 id="copyright">Valiente Publicidad © 2021</h5>
     </footer>
+  </div>
 </body>
 </html>

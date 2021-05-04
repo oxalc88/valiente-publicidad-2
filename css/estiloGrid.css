@@ -456,15 +456,15 @@ nav li:hover>ul {
 .btn{
     /* background: #0AEABF; */
     border-radius: 6px;
-    /* color: #49157D; */
-    background-color: #49157D;
-    color: #0AEABF;
+    color: #49157D;
+    /* background-color: #49157D; */
+    /* color: #0AEABF; */
     border-color: #49157D;
 }
 
 .btn:hover {
-    background-color: #0AEABF;
-    color: #49157D;
+    background-color: #49157D;
+    color: #0AEABF;
     transform: scale(1.15);
 }
 
@@ -473,12 +473,12 @@ nav li:hover>ul {
 .btn-outline-primary.active,
 .btn-outline-primary.dropdown-toggle.show,
 .btn-outline-primary:active {
-    background-color: #0AEABF;
+    /* background-color: #0AEABF; */
     /* border-radius: 6px; */
-    color: #49157D;
-    /* background-color: #49157D; */
-    /* color: #0AEABF; */
-    border-color: #0AEABF;
+    /* color: #49157D; */
+    background-color: #49157D;
+    color: #0AEABF;
+    /* border-color: #0AEABF; */
 }
 
 @media screen and (max-width: 320px) {

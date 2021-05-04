@@ -22,6 +22,7 @@ a {
     text-transform: uppercase;
 }
 
+
 p {
     font-family: "Roboto", sans-serif;
     line-height: 2em;
@@ -33,13 +34,14 @@ p {
 footer {
     background-image: linear-gradient(45deg, #9a6da6, #8d53a6, #9160a6);
 } */
-section {
+/* section {
     background: #756783;
-}
+} */
 
 /* para ocultar submenu */
 nav li ul {
     display: none;
+    padding: 0px;
 }
 
 nav li:hover>ul {
@@ -53,6 +55,7 @@ nav li:hover>ul {
 .link{
     display: block;
     padding: 30px;
+    text-decoration: none;
 }
 /*para que se subraye cuando pase el mouse*/
 .link:hover {
@@ -100,6 +103,7 @@ nav li:hover>ul {
     width: 246px;
     height: 87px;
     margin: 20px 5px;
+    padding-left: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,6 +130,7 @@ nav li:hover>ul {
     justify-content: center;
     cursor: pointer;
     transition: all .2s ease-in-out;
+    text-decoration: none;
 }
 
 .conoce{
@@ -139,7 +144,6 @@ nav li:hover>ul {
     width: 130px;
     height: 40px;
     border-radius: 6px;
-
 }
 
 .boton:hover{
@@ -244,6 +248,11 @@ nav li:hover>ul {
     align-items: center;
     justify-content: center;
     margin: 10px;
+}
+
+#copyright{
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 /* estilos de página servicios */
@@ -422,7 +431,55 @@ nav li:hover>ul {
 }
 
 /* estilos para pagina de formulario */
+.contacto{
+    width: 99.9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 10px;
+    padding: 30px 0px;
+}
 
+.contacto h1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.boton-servicios{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    /* background: #0AEABF; */
+    border-radius: 6px;
+    /* color: #49157D; */
+    background-color: #49157D;
+    color: #0AEABF;
+    border-color: #49157D;
+}
+
+.btn:hover {
+    background-color: #0AEABF;
+    color: #49157D;
+    transform: scale(1.15);
+}
+
+.btn-check:active+.btn-outline-primary,
+.btn-check:checked+.btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    background-color: #0AEABF;
+    /* border-radius: 6px; */
+    color: #49157D;
+    /* background-color: #49157D; */
+    /* color: #0AEABF; */
+    border-color: #0AEABF;
+}
 
 @media screen and (max-width: 320px) {
 

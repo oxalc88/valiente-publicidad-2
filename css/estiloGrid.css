@@ -48,9 +48,9 @@ nav li:hover>ul {
     display: block;
     position: absolute;
 }
-.submenu:hover {
+/* .submenu:hover {
     background: #ffff;
-}
+} */
 
 .link{
     display: block;
@@ -483,12 +483,12 @@ nav li:hover>ul {
     /* border-color: #0AEABF; */
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 813px) {
     .services-card{
         display: none;}
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 812px) {
 
     .menu, .slider, .cotiza {
         display: none;
@@ -504,10 +504,6 @@ nav li:hover>ul {
         justify-content: center;
         align-self: center;
         margin: 5px 30px;
-    }
-
-    .grilla .corpo {
-        grid-column: 1 / -1;
     }
 
     .contenedor-servicios{

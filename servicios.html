@@ -9,23 +9,28 @@
     <link rel="stylesheet" href="css/estiloGrid.css" />
     <title>Servicios Valiente</title>
 </head>
-<body class="justify-content-center align-items-center">
-    <div class="grilla">
+<body>
+    <div class="col-auto">
         <header class="contenedor-nav">
-            <nav class="barraValiente">
+            <nav class="barraValiente nav nav-fill">
                 <div class="logo">
                     <a href="index.html"><img src="img\logo\logo-valiente-original.png" alt="Valiente Publicidad Logo">
                     </a>
                 </div>
                 <ul class="menu">
-                    <li><a class="link" href="index.html">Inicio</a></li>
-                    <li><a class="link" href="nosotros.html">Nosotros</a></li>
-                    <li><a class="link" href="servicios.html">Servicios</a>
-                        <ul class="submenu">
-                            <li><a class="link" href="https://www.youtube.com/watch?v=ltZZ3M2zQRw" target="_blank">Servicio 1</a></li>
-                            <li><a class="link" href="https://www.youtube.com/watch?v=PyXH9AcNirk" target="_blank">Servicio 2</a></li>
-                            <li><a class="link" href="https://www.youtube.com/watch?v=L8ZxnNBKVfM" target="_blank">Servicio 3</a></li>
-                        </ul>
+                    <li><a class="link nav-link" href="index.html">Inicio</a></li>
+                    <li><a class="link nav-link" href="nosotros.html">Nosotros</a></li>
+                    <!-- <li class="nav-item dropdown"><a class="link nav-link dropdown-toggle" href="servicios.html">Servicios</a> -->
+                        <div class="dropdown">
+                            <a class="link nav-link dropdown-toggle" href="servicios.html" role="button" id="lista-servicios" data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="lista-servicios">
+                                <li><a class="link dropdown-item" href="https://www.youtube.com/watch?v=ltZZ3M2zQRw" target="_blank">Servicio 1</a></li>
+                                <li><a class="link dropdown-item" href="https://www.youtube.com/watch?v=PyXH9AcNirk" target="_blank">Servicio 2</a></li>
+                                <li><a class="link dropdown-item" href="https://www.youtube.com/watch?v=L8ZxnNBKVfM" target="_blank">Servicio 3</a></li>
+                            </ul>
+                        </div>
                     </li>
                     <li><a class="link" href="testimonios.html">Testimonios</a></li>
                     <li><a class="link" href="contacto.html">Contacto</a></li>
@@ -87,25 +92,25 @@
                     </div> 
                 </article>
             </section>
-            <section class="services-card container mx-auto">
+            <section class="services-card container row m-0 vh-100 justify-content-center align-items-center">
                 <h2 class="text-center">Servicios Valiente</h2>
-                <div id="carouselExampleFade" class="carousel slide carousel-fade row row-cols-1" data-bs-ride="carousel">
+                <div id="carousel-servicios" class="carousel slide col-auto" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <div class="card" style="width: 18rem;">
                             <img src="http://placeimg.com/286/180/people/sepia" class="card-img-top" alt="servicio1">
                             <div class="card-body">
-                                <h5 class="card-title">Servicio1</h5>
+                                <h5 class="card-title">Servicio 1</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ratione culpa consequuntur iure? Odio unde vero tempore velit molestiae quas?</p>
                                 <a href="https://www.youtube.com/watch?v=PyXH9AcNirk" class="btn btn-primary boton-servicio">Cotiza Aqui</a>
                             </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <div class="card" style="width: 18rem;">
                                 <img src="http://placeimg.com/286/180/animals" class="card-img-top" alt="servicio2">
                                 <div class="card-body">
-                                    <h5 class="card-title">Servicio2</h5>
+                                    <h5 class="card-title">Servicio 2</h5>
                                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit quod illo quos molestias quae magnam possimus iure. Ducimus, perspiciatis expedita!</p>
                                     <a href="https://www.youtube.com/watch?v=PyXH9AcNirk" class="btn btn-primary boton-servicio">Cotiza Aqui</a>
                                 </div>
@@ -115,7 +120,7 @@
                         <div class="card" style="width: 18rem;">
                             <img src="http://placeimg.com/286/180/arch/grayscale" class="card-img-top" alt="servicio3">
                             <div class="card-body">
-                                <h5 class="card-title">Servicio3</h5>
+                                <h5 class="card-title">Servicio 3</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ducimus repellendus ipsa ab dolores sequi debitis atque dolore nihil! Quidem.</p>
                                 <a href="https://www.youtube.com/watch?v=PyXH9AcNirk" class="btn btn-primary boton-servicio">Cotiza Aqui</a>
                             </div>
@@ -125,20 +130,20 @@
                         <div class="card" style="width: 18rem;">
                                 <img src="http://placeimg.com/286/180/tech/sepia" class="card-img-top" alt="servicio4">
                             <div class="card-body">
-                                <h5 class="card-title">Servicio4</h5>
+                                <h5 class="card-title">Servicio 4</h5>
                                 <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum sequi at consectetur, sint tempora ipsa ullam labore! Aliquam, dolores itaque.</p>
                                 <a href="https://www.youtube.com/watch?v=PyXH9AcNirk" class="btn btn-primary boton-servicio">Cotiza Aqui</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-servicios" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
+                    <span class="visually-hidden-focusable">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-servicios" data-bs-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                    <span class="visually-hidden-focusable">Next</span>
                 </button>
                 </div>
             </section>

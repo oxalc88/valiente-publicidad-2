@@ -133,6 +133,8 @@ nav li:hover>ul {
     text-decoration: none;
 }
 
+
+
 .conoce{
     width: 115px;
     height: 48px;
@@ -481,6 +483,11 @@ nav li:hover>ul {
     /* border-color: #0AEABF; */
 }
 
+@media only screen and (min-width: 768px) {
+    .services-card{
+        display: none;}
+}
+
 @media screen and (max-width: 320px) {
 
     .menu, .slider, .cotiza {
@@ -511,5 +518,19 @@ nav li:hover>ul {
 
     .grilla .nav-foot {
         grid-column: 1/-1;
+    }
+
+    .boton-servicio {
+        background-color: #0AEABF;
+    }
+
+    .boton-servicio:hover {
+        background-color: #49157D;
+        color: #0AEABF;
+        transform: scale(1.15);
+    }
+
+    .cartas-servicios{
+        display: none;
     }
 }

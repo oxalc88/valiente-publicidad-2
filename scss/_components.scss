@@ -1,0 +1,174 @@
+nav li {
+    ul {
+        display: none;
+        padding: 0px;
+    }
+
+    &:hover>ul {
+        display: block;
+        position: absolute;
+    }
+}
+
+.link {
+    display: block;
+    padding: 30px;
+    text-decoration: none;
+
+    &:hover {
+        background: $turquesa;
+    }
+
+    &:active {
+        background-color: $morado;
+        color: $turquesa;
+    }
+}
+
+.logo {
+    grid-area: logo;
+    width: 246px;
+    height: 87px;
+    margin: 20px 5px;
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 95%;
+    }
+}
+
+.cotiza {
+    grid-area: boton;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton {
+    background-color: $turquesa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    text-decoration: none;
+}
+
+.conoce {
+    width: 115px;
+    height: 48px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.cotiz {
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.boton:hover {
+    background-color: $morado;
+    color: $turquesa;
+    transform: scale(1.15);
+}
+
+.show {
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.05);
+        opacity: 80%;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+#copyright {
+    grid-area: copy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.them {
+    border-bottom: $morado 3px solid;
+}
+
+.testimonio h2 {
+    margin: 25px;
+    padding: 15px;
+}
+
+.los-testi {
+    margin: 10px;
+}
+
+.linea {
+    background: $morado;
+    height: 60vh;
+    padding: 1px;
+    display: block;
+    margin: auto;
+}
+
+.boton-servicio {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border-radius: 6px;
+    color: $morado;
+    border-color: $morado;
+
+    &:hover {
+        background-color: $morado;
+        color: $turquesa;
+        transform: scale(1.15);
+    }
+}
+
+.btn-check {
+
+    &:active+.btn-outline-primary,
+    &:checked+.btn-outline-primary {
+        background-color: $morado;
+        color: $turquesa;
+    }
+}
+
+.btn-outline-primary {
+
+    &.active,
+    &.dropdown-toggle.show,
+    &:active {
+        background-color: $morado;
+        color: $turquesa;
+    }
+}
+
+.boton-servicio {
+    background-color: #0AEABF;
+
+    &:hover {
+        background-color: #49157D;
+        color: #0AEABF;
+        transform: scale(1.15);
+    }
+}

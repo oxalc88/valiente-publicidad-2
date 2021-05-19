@@ -448,7 +448,7 @@ nav li:hover>ul {
     margin-bottom: 50px;
 }
 
-.boton-servicios{
+.boton-servicio{
     display: flex;
     flex-direction: row;
     align-items: center;

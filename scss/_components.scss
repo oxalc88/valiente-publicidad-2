@@ -25,6 +25,26 @@ nav li {
     }
 }
 
+.footer__list__item{
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none;
+    align-items: flex-start;
+
+    &:hover {
+        background: $turquesa;
+    }
+
+    &:active {
+        background-color: $morado;
+        color: $turquesa;
+    }
+}
+
+.footer__list {
+    padding-left: 0px;
+}
+
 .boton {
     background-color: $turquesa;
     display: flex;
@@ -140,11 +160,22 @@ nav li {
 }
 
 .boton-servicio {
-    background-color: #0AEABF;
+    background-color: $turquesa;
 
     &:hover {
-        background-color: #49157D;
-        color: #0AEABF;
+        background-color: $morado;
+        color: $turquesa;
         transform: scale(1.15);
     }
+}
+
+@media screen and (max-width: 812px) {
+.linea {
+    background: $morado;
+    width: 85vw;
+    height: 1px;
+    padding: 1px;
+    display: block;
+    margin: auto;
+}
 }

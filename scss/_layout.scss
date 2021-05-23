@@ -12,29 +12,27 @@
     grid-area: header;
 }
 
-.navigation {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: "logo barra barra barra boton";
-    grid-gap: 5rem;
+.navbar-light, 
+.navbar-nav,
+.nav-link {
+    color: $morado !important;
 }
 
-.navigation__logo {
-    grid-area: logo;
-    width: 246px;
-    height: 87px;
-    margin: 20px 5px;
-    padding-left: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+// .navigation__logo {
+//     grid-area: logo;
+//     width: 246px;
+//     height: 87px;
+//     margin: 20px 5px;
+//     padding-left: 25px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
 
-    img {
-        width: 95%;
-    }
-}
+//     img {
+//         width: 95%;
+//     }
+// }
 
 .navigation__menu {
     grid-area: barra;
@@ -244,7 +242,8 @@
     width: 99vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     background: $blanco;
     margin-bottom: 70px;
 }
@@ -285,6 +284,12 @@
     }
 }
 
+.contacto__form{
+    max-width: 300px;
+    // margin: 30px 10px;
+    // padding: 10px 0px;
+}
+
 .confianza {
     iframe {
         margin: 10px;
@@ -305,14 +310,14 @@
 
 @media screen and (max-width: 812px) {
 
-    .navigation__menu,
+    // .navigation__menu,
     .slider,
     .navigation__cotiza,
     .footer .navigation__logo {
         display: none;
     }
 
-    .header .navigation__logo {
+    .navigation__logo {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -333,4 +338,34 @@
     .cartas-servicios {
         display: none;
     }
+
+    .testimonio {
+        grid-area: cuerpo;
+        width: 99vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: $blanco;
+        margin-bottom: 70px;
+    }
+
+    .listaClientes .confianza {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 49vw;
+        gap: 5rem;
+    }
+
+    // .clientes {
+    //     display: flex;
+    //     flex-flow: row wrap;
+    //     align-items: center;
+
+    //     img {
+    //         margin: 35px;
+    //         box-shadow: 3px 3px 8px 0px rgb(10, 10, 10);
+    //     }
+    // }
 }

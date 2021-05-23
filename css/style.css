@@ -28,25 +28,10 @@ p {
 .header {
   grid-area: header; }
 
-.navigation {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "logo barra barra barra boton";
-  grid-gap: 5rem; }
-
-.navigation__logo {
-  grid-area: logo;
-  width: 246px;
-  height: 87px;
-  margin: 20px 5px;
-  padding-left: 25px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; }
-  .navigation__logo img {
-    width: 95%; }
+.navbar-light,
+.navbar-nav,
+.nav-link {
+  color: #49157D !important; }
 
 .navigation__menu {
   grid-area: barra;
@@ -212,7 +197,8 @@ p {
   width: 99vw;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
   background: #ffff;
   margin-bottom: 70px; }
 
@@ -244,6 +230,9 @@ p {
     justify-content: center;
     margin-bottom: 50px; }
 
+.contacto__form {
+  max-width: 300px; }
+
 .confianza iframe {
   margin: 10px;
   padding: 20px; }
@@ -257,12 +246,11 @@ p {
     display: none; } }
 
 @media screen and (max-width: 812px) {
-  .navigation__menu,
   .slider,
   .navigation__cotiza,
   .footer .navigation__logo {
     display: none; }
-  .header .navigation__logo {
+  .navigation__logo {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -275,7 +263,22 @@ p {
   .grilla .footer {
     grid-column: 1/-1; }
   .cartas-servicios {
-    display: none; } }
+    display: none; }
+  .testimonio {
+    grid-area: cuerpo;
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: #ffff;
+    margin-bottom: 70px; }
+  .listaClientes .confianza {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 49vw;
+    gap: 5rem; } }
 
 nav li ul {
   display: none;
@@ -294,6 +297,20 @@ nav li:hover > ul {
   .navigation__menu__link:active {
     background-color: #49157D;
     color: #0AEABF; }
+
+.footer__list__item {
+  margin: 2px;
+  padding: 2px;
+  text-decoration: none;
+  align-items: flex-start; }
+  .footer__list__item:hover {
+    background: #0AEABF; }
+  .footer__list__item:active {
+    background-color: #49157D;
+    color: #0AEABF; }
+
+.footer__list {
+  padding-left: 0px; }
 
 .boton {
   background-color: #0AEABF;
@@ -387,3 +404,12 @@ nav li:hover > ul {
     background-color: #49157D;
     color: #0AEABF;
     transform: scale(1.15); }
+
+@media screen and (max-width: 812px) {
+  .linea {
+    background: #49157D;
+    width: 85vw;
+    height: 1px;
+    padding: 1px;
+    display: block;
+    margin: auto; } }

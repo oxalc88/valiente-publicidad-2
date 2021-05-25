@@ -23,7 +23,7 @@ p {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "header header header header header" "cuerpo cuerpo cuerpo cuerpo cuerpo" "foot foot foot foot foot"; }
+  grid-template-areas: "header header header header header" "cuerpo cuerpo cuerpo cuerpo cuerpo" "foot foot foot foot foot"; }
 
 .header {
   grid-area: header; }
@@ -52,7 +52,7 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  grid-template-areas: "carrusel carrusel carrusel carrusel carrusel" "servicios servicios servicios servicios servicios"; }
+  grid-template-areas: "carrusel carrusel carrusel carrusel carrusel" "servicios servicios servicios servicios servicios"; }
 
 .slider {
   grid-area: carrusel;
@@ -146,9 +146,7 @@ p {
   margin: 5px 0px; }
 
 .serviDescrip > p {
-  margin: 5px 0px;
-  /* width: 514vw;
-    height: 90px; */ }
+  margin: 5px 0px; }
 
 .serviDescrip > .cotiza {
   margin: 20px 0px; }

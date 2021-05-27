@@ -18,22 +18,6 @@
     color: $morado !important;
 }
 
-// .navigation__logo {
-//     grid-area: logo;
-//     width: 246px;
-//     height: 87px;
-//     margin: 20px 5px;
-//     padding-left: 25px;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-
-//     img {
-//         width: 95%;
-//     }
-// }
-
 .navigation__menu {
     grid-area: barra;
     display: flex;
@@ -299,6 +283,16 @@
     }
 }
 
+.error{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    // text-align: center;
+    max-width: 500px;
+    margin-top: 15em;
+}
+
 @media only screen and (min-width: 813px) {
     .services-card {
         display: none;
@@ -355,14 +349,4 @@
         gap: 5rem;
     }
 
-    // .clientes {
-    //     display: flex;
-    //     flex-flow: row wrap;
-    //     align-items: center;
-
-    //     img {
-    //         margin: 35px;
-    //         box-shadow: 3px 3px 8px 0px rgb(10, 10, 10);
-    //     }
-    // }
 }

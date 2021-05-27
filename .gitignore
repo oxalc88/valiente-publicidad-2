@@ -1,0 +1,8 @@
+#ignora carpeta node_modules 
+/node_modules
+
+# Ignore SASS config files
+.sass-cache
+
+package-lock.json
+package.json 

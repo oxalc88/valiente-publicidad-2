@@ -104,7 +104,11 @@
 .footer {
     grid-area: foot;
     border-top: 0px solid $morado;
+<<<<<<< HEAD
     width: 99vw;
+=======
+    width: 95vw;
+>>>>>>> 3c1add8 (corregido el ancho footer y form de contacto)
 }
 
 /* estilos de página servicios */
@@ -267,7 +271,7 @@
 }
 
 .contacto__form{
-    max-width: 300px;
+    max-width: 500px;
     // margin: 30px 10px;
     // padding: 10px 0px;
 }
@@ -374,6 +378,10 @@
         align-items: center;
         width: 49vw;
         gap: 5rem;
+    }
+
+    .contacto__form{
+        max-width: 300px;
     }
 
 }

@@ -103,7 +103,11 @@ p {
 .footer {
   grid-area: foot;
   border-top: 0px solid #49157D;
+<<<<<<< HEAD
   width: 99vw; }
+=======
+  width: 95vw; }
+>>>>>>> 3c1add8 (corregido el ancho footer y form de contacto)
 
 /* estilos de página servicios */
 .cartas-servicios {
@@ -230,7 +234,7 @@ p {
     margin-bottom: 50px; }
 
 .contacto__form {
-  max-width: 300px; }
+  max-width: 500px; }
 
 .confianza iframe {
   margin: 10px;
@@ -306,7 +310,9 @@ p {
     justify-content: center;
     align-items: center;
     width: 49vw;
-    gap: 5rem; } }
+    gap: 5rem; }
+  .contacto__form {
+    max-width: 300px; } }
 
 nav li ul {
   display: none;
@@ -375,15 +381,6 @@ nav li:hover > ul {
     opacity: 80%; }
   .show img {
     width: 100%; }
-
-#footer__copyright {
-  grid-area: copy;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 10px;
-  font-size: 1rem;
-  font-weight: bold; }
 
 .them {
   border-bottom: #49157D 3px solid; }

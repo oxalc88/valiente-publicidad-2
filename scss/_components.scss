@@ -90,16 +90,6 @@ nav li {
     }
 }
 
-#footer__copyright {
-    grid-area: copy;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 10px;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
 .them {
     border-bottom: $morado 3px solid;
 }

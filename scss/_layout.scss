@@ -18,14 +18,6 @@
     color: $morado !important;
 }
 
-.navigation__menu {
-    grid-area: barra;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .navigation__cotiza {
     grid-area: boton;
     display: flex;

@@ -33,6 +33,13 @@ p {
 .nav-link {
   color: #49157D !important; }
 
+.navigation__menu {
+  grid-area: barra;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly; }
+
 .navigation__cotiza {
   grid-area: boton;
   display: flex;
@@ -240,6 +247,27 @@ p {
   justify-content: center;
   max-width: 500px;
   margin-top: 15em; }
+
+.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 500px;
+  margin-top: 10em; }
+
+.error--logo {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-self: center; }
+
+.error--boton, .error--titulo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem; }
 
 @media only screen and (min-width: 813px) {
   .services-card {

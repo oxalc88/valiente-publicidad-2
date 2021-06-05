@@ -137,7 +137,6 @@ p {
 
 .img-service {
   grid-area: imagen;
-  /* width: 40vw; */
   width: 546vw;
   height: 225px;
   display: block;

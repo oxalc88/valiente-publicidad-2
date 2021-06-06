@@ -4,6 +4,5 @@
 # Ignore SASS config files
 .sass-cache
 
-package-lock.json
-package.json 
+#ignore zip file with json
 valiente-json.zip

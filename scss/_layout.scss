@@ -224,8 +224,7 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    width: 49vw;
-    gap: 1rem;
+    width: 50%;
 }
 
 .clientes {
@@ -359,11 +358,10 @@
 
     .listaClientes .confianza {
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row;
         justify-content: center;
         align-items: center;
-        width: 49vw;
-        gap: 5rem;
+        max-width: 360px;
     }
 
     .contacto__form{

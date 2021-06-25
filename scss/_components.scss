@@ -118,6 +118,7 @@ nav li {
     justify-content: center;
 }
 
+// haciendo responsive el video de la página de testimonio
 .testimonios_video {
 	height: 0;
 	overflow: hidden;
@@ -167,6 +168,7 @@ nav li {
     }
 }
 
+// cambiando el estilo de boton de bootstrap
 .btn-check {
 
     &:active+.btn-outline-primary,

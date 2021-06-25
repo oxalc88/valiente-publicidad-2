@@ -50,7 +50,7 @@
 
 .inicio-presentacion{
     grid-area: presentacion;
-    width: 99vw;
+    width: 98vw;
     margin: 10px;
     padding: 20px;
 }
@@ -58,7 +58,7 @@
 .contenedor-servicios {
     grid-area: servicios;
     display: grid;
-    width: 99vw;
+    width: 98vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
     grid-template-areas: "serv serv""serv1 serv2""serv3 serv4";
@@ -112,6 +112,7 @@
 
 .cartas-servicios {
     grid-area: cuerpo;
+    width: 98vw;
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 5% repeat(4, 1fr);
@@ -131,14 +132,15 @@
 
 .plato {
     display: grid;
+    width: 98vw;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-template-areas: 
     "descripcion imagen"
     "descripcion imagen"
     "descripcion imagen";
-    gap: 5rem;
-    margin: 30px 40px;
+    gap: 2rem;
+    padding: 20px 40px;
 }
 
 .serviDescrip {
@@ -397,7 +399,6 @@
     .us {
         width: 250px;
         height: 363px;
-        // margin: 90px;
         align-self: center;
     
         img {
